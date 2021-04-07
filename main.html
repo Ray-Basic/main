@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html:>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>빈 자리 알림이</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <style>
+  .nav {
+    height: 70px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-right-items {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav-item {
+    margin-left: 10px;
+    color: black;
+    }
+
+  .group-name {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+  }     
+
+  .title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+  } 
+
+  .subtitle {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .main {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .prices {
+    display: flex;
+  }
+
+  .price-item {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 100px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .price-item-title {
+    font-size: 1.2rem;
+    background: rgba(0,0,0,.03);
+    text-align: center;
+    height: 53px;
+    line-height: 53px;
+    border-bottom: 1px solid black;
+  }
+
+  .price-item-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  .price-item-button {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border:none;
+    border-radius: .3rem;
+    background-color: #007bff;
+    color: white;
+    background-image: none;
+    border-color: #007bff;
+    margin-top: 120px;
+    transition:0.3s;
+  }
+  .price-item-detail {
+    font-size: 16px;
+    color: gray;
+  }
+  button:focus{
+    outline: 0;
+  }
+  button:hover{
+    background-color: rgba(0,79,255,0.8);
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,79,255,0.6);
+  }
+  .group-name a:link, a:visited, a:hover, a:active {
+    color:black;
+    text-decoration: none;
+}
+  .nav-item a:link, a:visited, a:hover, a:active {
+    color: black;
+    text-decoration: none;
+}
+  </style>
+  <body>
+    <div class="nav">
+      <div class="group-name"><a href="https://heoseunggyu.github.io/emptyseat/emptyseat.html">최강1조다승승</a></div>
+       <div class="nav-right-items">
+         <div class="nav-item"><a href="https://heoseunggyu.github.io/introduce/introduce.html">소개</a></div>
+         <div class="nav-item"><a href="http://openapi.tago.go.kr/openapi/service/TrainInfoService/getCtyCodeList?ServiceKey=NJPq5bgNwTn08ylVVjGuBpmtiwARPqc%2BUR4WPrIf5advbjU9WA1RrL1SIMjKUNhRHh2fKE8QOVUpf6%2FBu9lCpA%3D%3D">시내버스(지원노선)</a></div>
+         <div class="nav-item">지하철(지원호선)</div>
+         <div class="nav-item"><a href="https://heoseunggyu.github.io/developer/developer.html">개발자</a></div>
+      </div>
+      </div>
+        <div class="main">
+          <div class="title">
+            빈 자리 알림이
+          </div>
+          <div class="subtitle">
+           원하는 대중교통을 선택하세요.
+        </div>
+
+        <div class="prices">
+        <div class="price-item">
+          <div class="price-item-title">
+             지하철
+            </div>
+            <button class="price-item-button">
+            <a href="https://ray-basic.github.io/firstmap/firstmap.html">자리 확인1</a>
+              </button>
+            <button class="price-item-button">
+            <a href="https://ray-basic.github.io/secondmap/secondmap.html">자리 확인2</a>
+              </buttton>
+        </div>
+        <div class="price-item">
+          <div class="price-item-title">
+             시내버스
+            </div>
+            <button class="price-item-button">
+            <a href="http://openapi.tago.go.kr/openapi/service/BusLcInfoInqireService/getRouteAcctoBusLcList?ServiceKey=NJPq5bgNwTn08ylVVjGuBpmtiwARPqc%2BUR4WPrIf5advbjU9WA1RrL1SIMjKUNhRHh2fKE8QOVUpf6%2FBu9lCpA%3D%3D&cityCode=33020&routeId=CHB272000377"</a>자리 확인1
+              </button>
+            <button class="price-item-button">
+            <a href="http://openapi.tago.go.kr/openapi/service/BusLcInfoInqireService/getRouteAcctoSpcifySttnAccesBusLcInfo?ServiceKey=NJPq5bgNwTn08ylVVjGuBpmtiwARPqc%2BUR4WPrIf5advbjU9WA1RrL1SIMjKUNhRHh2fKE8QOVUpf6%2FBu9lCpA%3D%3D&cityCode=33020&routeId=CHB272000377&nodeId=CHB272051002"</a>자리 확인2
+              </button>
+            </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
